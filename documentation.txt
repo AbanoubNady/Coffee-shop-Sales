@@ -1,0 +1,320 @@
+1. Create Data base & import data 
+
+2. Data Cleaning
+	1.Data Format (transaction_date from STR to date)
+	2.Data Format (transaction_time from str to time)
+	3.Coulmn name from "%transactio_id" to "transaction_ID"
+
+
+3.Q1 What are the total sales for each month, and did they increase?  = 
+  A1 =  1	81678			NA
+	2	76145	81678	-5533	No
+	3	98835	76145	22690	Yes
+	4	118941	98835	20106	Yes
+	5	156728	118941	37787	Yes
+	6	166486	156728	9758	Yes
+
+
+
+4.Q2 What are the total orders for each month, and did they increase?
+
+A2=     1	17314			NA
+	2	16359	17314	-955	No
+	3	21229	16359	4870	yes
+	4	25335	21229	4106	yes
+	5	33527	25335	8192	yes
+
+5.Q3 What is the quantity of each product sold each month, and did it increase?
+
+A3= 
+1	Gourmet brewed coffee	3018		NA
+1	Brewed Chai tea	3011	3018	No
+1	Hot chocolate	2015	3011	No
+1	Drip coffee	1439	2015	No
+1	Scone	1234	1439	No
+1	Barista Espresso	2861	1234	Yes
+1	Brewed Black tea	2014	2861	No
+1	Brewed Green tea	1052	2014	No
+1	Brewed herbal tea	1983	1052	Yes
+1	Biscotti	676	1983	No
+1	Pastry	780	676	Yes
+1	Organic brewed coffee	1584	780	Yes
+1	Premium brewed coffee	1453	1584	No
+1	Regular syrup	902	1453	No
+1	Herbal tea	39	902	No
+1	Gourmet Beans	34	39	No
+1	Organic Beans	52	34	Yes
+1	Sugar free syrup	316	52	Yes
+1	Drinking Chocolate	30	316	No
+1	Premium Beans	53	30	Yes
+1	Chai tea	40	53	No
+1	Green beans	23	40	No
+1	Espresso Beans	45	23	Yes
+1	Green tea	20	45	No
+1	Organic Chocolate	27	20	Yes
+1	Housewares	64	27	Yes
+1	Black tea	42	64	No
+1	House blend Beans	27	42	No
+1	Clothing	36	27	Yes
+2	Hot chocolate	1964	36	Yes
+2	Brewed Black tea	1954	1964	No
+2	Premium brewed coffee	1338	1954	No
+2	Brewed herbal tea	1906	1338	Yes
+2	Barista Espresso	2747	1906	Yes
+2	Brewed Chai tea	2853	2747	Yes
+2	Brewed Green tea	1005	2853	No
+2	Drip coffee	1365	1005	Yes
+2	Scone	1139	1365	No
+2	Organic brewed coffee	1402	1139	Yes
+2	Biscotti	656	1402	No
+2	Gourmet brewed coffee	2837	656	Yes
+2	Pastry	764	2837	No
+2	Herbal tea	35	764	No
+2	Sugar free syrup	326	35	Yes
+2	Regular syrup	837	326	Yes
+2	Gourmet Beans	45	837	No
+2	Organic Chocolate	23	45	No
+2	Black tea	38	23	Yes
+2	Drinking Chocolate	28	38	No
+2	Chai tea	47	28	Yes
+2	Organic Beans	42	47	No
+2	Espresso Beans	38	42	No
+2	Premium Beans	37	38	No
+2	Green beans	17	37	No
+2	Green tea	17	17	equal
+2	Housewares	57	17	Yes
+2	Clothing	17	57	No
+2	House blend Beans	16	17	No
+3	Drip coffee	1829	16	Yes
+3	Gourmet brewed coffee	3614	1829	Yes
+3	Barista Espresso	3560	3614	No
+3	Brewed Green tea	1215	3560	No
+3	Hot chocolate	2475	1215	Yes
+3	Brewed Chai tea	3750	2475	Yes
+3	Brewed Black tea	2508	3750	No
+3	Scone	1492	2508	No
+3	Pastry	1010	1492	No
+3	Premium brewed coffee	1765	1010	Yes
+3	Organic brewed coffee	1836	1765	Yes
+3	Biscotti	856	1836	No
+3	Brewed herbal tea	2433	856	Yes
+3	Organic Chocolate	28	2433	No
+3	Regular syrup	1077	28	Yes
+3	Gourmet Beans	55	1077	No
+3	Organic Beans	63	55	Yes
+3	Black tea	46	63	No
+3	Sugar free syrup	388	46	Yes
+3	Herbal tea	47	388	No
+3	Espresso Beans	50	47	Yes
+3	Premium Beans	43	50	No
+3	Drinking Chocolate	37	43	No
+3	Chai tea	58	37	Yes
+3	Green tea	27	58	No
+3	Housewares	75	27	Yes
+3	Green beans	19	75	No
+3	House blend Beans	21	19	Yes
+3	Clothing	29	21	Yes
+4	Gourmet brewed coffee	4396	29	Yes
+4	Hot chocolate	2952	4396	No
+4	Brewed Black tea	2925	2952	No
+4	Brewed herbal tea	2927	2925	Yes
+4	Premium brewed coffee	2110	2927	No
+4	Drip coffee	2177	2110	Yes
+4	Brewed Chai tea	4528	2177	Yes
+4	Scone	1822	4528	No
+4	Biscotti	945	1822	No
+4	Organic brewed coffee	2273	945	Yes
+4	Barista Espresso	4254	2273	Yes
+4	Brewed Green tea	1459	4254	No
+4	Pastry	1184	1459	No
+4	Regular syrup	1292	1184	Yes
+4	Herbal tea	49	1292	No
+4	Sugar free syrup	481	49	Yes
+4	Gourmet Beans	61	481	No
+4	Organic Beans	73	61	Yes
+4	House blend Beans	33	73	No
+4	Premium Beans	77	33	Yes
+4	Chai tea	76	77	No
+4	Black tea	47	76	No
+4	Espresso Beans	45	47	No
+4	Drinking Chocolate	53	45	Yes
+4	Housewares	110	53	Yes
+4	Organic Chocolate	42	110	No
+4	Green beans	21	42	No
+4	Clothing	32	21	Yes
+4	Green tea	25	32	No
+5	Gourmet brewed coffee	5761	25	Yes
+5	Drip coffee	2947	5761	No
+5	Barista Espresso	5556	2947	Yes
+5	Hot chocolate	3930	5556	No
+5	Brewed Chai tea	5934	3930	Yes
+5	Brewed herbal tea	3990	5934	No
+5	Scone	2349	3990	No
+5	Brewed Black tea	3925	2349	Yes
+5	Biscotti	1291	3925	No
+5	Brewed Green tea	1964	1291	Yes
+5	Pastry	1585	1964	No
+5	Premium brewed coffee	2804	1585	Yes
+5	Organic brewed coffee	2880	2804	Yes
+5	Organic Chocolate	51	2880	No
+5	Herbal tea	65	51	Yes
+5	Sugar free syrup	672	65	Yes
+5	Organic Beans	87	672	No
+5	Regular syrup	1710	87	Yes
+5	Drinking Chocolate	57	1710	No
+5	House blend Beans	41	57	No
+5	Gourmet Beans	91	41	Yes
+5	Espresso Beans	70	91	No
+5	Premium Beans	89	70	Yes
+5	Chai tea	100	89	Yes
+5	Green tea	34	100	No
+5	Housewares	110	34	Yes
+5	Black tea	60	110	No
+5	Green beans	29	60	No
+5	Clothing	51	29	Yes
+6	Drip coffee	3134	51	Yes
+6	Gourmet brewed coffee	6347	3134	Yes
+6	Barista Espresso	5965	6347	No
+6	Brewed Green tea	2002	5965	No
+6	Hot chocolate	4121	2002	Yes
+6	Brewed Chai tea	6174	4121	Yes
+6	Brewed herbal tea	4089	6174	No
+6	Scone	2429	4089	No
+6	Brewed Black tea	4136	2429	Yes
+6	Biscotti	1364	4136	No
+6	Organic brewed coffee	3037	1364	Yes
+6	Premium brewed coffee	2961	3037	No
+6	Pastry	1638	2961	No
+6	Organic Chocolate	50	1638	No
+6	Black tea	70	50	Yes
+6	Herbal tea	70	70	equal
+6	Sugar free syrup	722	70	Yes
+6	Regular syrup	1788	722	Yes
+6	Gourmet Beans	80	1788	No
+6	Organic Beans	103	80	Yes
+6	Drinking Chocolate	61	103	No
+6	House blend Beans	45	61	No
+6	Chai tea	122	45	Yes
+6	Espresso Beans	71	122	No
+6	Premium Beans	107	71	Yes
+6	Green tea	36	107	No
+6	Housewares	139	36	Yes
+6	Green beans	25	139	No
+6	Clothing	56	25	Yes
+
+
+6.Q4 What are the total sales for each month, and did they increase? What are the total orders for each month, and did they increase? What is the quantity and did they increase?
+
+A4=
+1	81677.73999999928	NA	17314	NA	24870	NA
+2	76145.18999999958	No	16359	No	23550	No
+3	98834.68000000001	Yes	21229	yes	30406	Yes
+4	118941.08000000106	Yes	25335	yes	36469	Yes
+5	156727.7600000045	Yes	33527	yes	48233	Yes
+6	166485.88000000533	Yes	35352	yes	50942	Yes
+
+7. Q5 Compare the average sales for weekdays and weekends in a month?
+
+1	58513	23165	35348	2660	2574	weekday
+2	54003	22143	31860	2700	2768	weekend
+3	73367	25467	47900	3190	3183	weekday
+4	79593	39349	40244	3980	3935	weekday
+5	116628	40100	76528	5071	5012	weekday
+6	121484	45002	76482	5522	5625	weekend
+
+8.Q6 In a month, what are the average sales for weekdays and weekends for each store?
+
+1	Lower Manhattan	19113	7431	11682	869	826	weekday
+1	Hell's Kitchen	19957	7863	12094	907	874	weekday
+1	Astoria		19443	7871	11572	884	875	weekday
+2	Lower Manhattan	18010	7310	10700	900	914	weekend
+2	Hell's Kitchen	18013	7707	10306	901	963	weekend
+2	Astoria		17979	7126	10853	899	891	weekday
+3	Lower Manhattan	24535	8354	16181	1067	1044	weekday
+3	Hell's Kitchen	24693	8418	16275	1074	1052	weekday
+3	Astoria		24140	8696	15444	1050	1087	weekend
+4	Lower Manhattan	26018	13141	12877	1301	1314	weekend
+4	Hell's Kitchen	27769	12535	15234	1388	1254	weekday
+4	Astoria		25805	13672	12133	1290	1367	weekend
+5	Lower Manhattan	38304	13396	24908	1665	1674	weekend
+5	Hell's Kitchen	38028	14571	23457	1653	1821	weekend
+5	Astoria		40296	12133	28163	1752	1517	weekday
+6	Lower Manhattan	39778	14668	25110	1808	1834	weekend
+6	Hell's Kitchen	41766	15191	26575	1898	1899	weekend
+6	Astoria		39940	15143	24797	1815	1893	weekend
+
+
+9.Q7 What are the total sales for each product each month?
+
+1	Coffee			31257	38%
+1	Tea			22622	28%
+1	Drinking Chocolate	8338	10%
+1	Bakery			9536	12%
+1	Flavours		974	1%
+1	Loose Tea		1294	2%
+1	Coffee beans		5245	6%
+1	Packaged Chocolate	522	1%
+1	Branded			1890	2%
+2	Drinking Chocolate	8132	11%
+2	Tea			21733	29%
+2	Coffee			29269	38%
+2	Bakery			9039	12%
+2	Loose Tea		1278	2%
+2	Flavours		930	1%
+2	Coffee beans		4077	5%
+2	Packaged Chocolate	451	1%
+2	Branded			1235	2%
+3	Coffee			38304	39%
+3	Tea			27911	28%
+3	Drinking Chocolate	10254	10%
+3	Bakery			11903	12%
+3	Packaged Chocolate	588	1%
+3	Flavours		1172	1%
+3	Coffee beans		5256	5%
+3	Loose Tea		1647	2%
+3	Branded			1801	2%
+4	Coffee			45971	39%
+4	Drinking Chocolate	12267	10%
+4	Tea			33357	28%
+4	Bakery			14022	12%
+4	Flavours		1418	1%
+4	Loose Tea		1829	2%
+4	Coffee beans		6825	6%
+4	Packaged Chocolate	873	1%
+4	Branded			2379	2%
+5	Coffee			60363	39%
+5	Drinking Chocolate	16320	10%
+5	Tea			44540	28%
+5	Bakery			18566	12%
+5	Packaged Chocolate	981	1%
+5	Loose Tea		2395	2%
+5	Flavours		1906	1%
+5	Coffee beans		8769	6%
+5	Branded			2889	2%
+6	Coffee			64789	39%
+6	Tea			46243	28%
+6	Drinking Chocolate	17106	10%
+6	Bakery			19251	12%
+6	Packaged Chocolate	992	1%
+6	Loose Tea		2771	2%
+6	Flavours		2008	1%
+6	Coffee beans		9913	6%
+6	Branded			3413	2%
+
+10. Q8 What is the peak hour what we make the most sales? And the percentage?
+
+10	88673.39	12.69%
+9	85169.53	12.19%
+8	82699.87	11.83%
+7	63526.47	9.09%
+11	46319.14	6.63%
+15	41733.1		5.97%
+14	41304.74	5.91%
+16	41122.75	5.88%
+13	40367.45	5.78%
+12	40192.79	5.75%
+17	40134.31	5.74%
+18	34286.2		4.91%
+19	28446.68	4.07%
+6	21900.27	3.13%
+20	2935.64		0.42%
