@@ -1,3 +1,4 @@
 1. Data cleaning (create a calendar , creating the required columns)
 2. designing the canvas
-3. Measures & DAX & Charts& Tool tip
+3. Measures & DAX & Charts& Tool tip & conditional Formating
+4. Charts (Slicer / Calendar / Donut Chart / Bar Chart/Matrix)
